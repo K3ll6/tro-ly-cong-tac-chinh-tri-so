@@ -87,7 +87,7 @@ app.get("/api/situations", async (req,res)=>{
   if(!pool) return res.json(fallback.situations);
   const q=await pool.query("SELECT * FROM situations ORDER BY id"); res.json(q.rows);
 });
-app.get("*", (req,res)=>res.sendFile(path.join(__dirname,"public","index.html")));
+app.use((req,res)=>res.sendFile(path.join(__dirname,"public","index.html")));
 
 initDb().then(()=>app.listen(PORT,"0.0.0.0",()=>console.log(`CTCT So server on ${PORT}`)))
 .catch(err=>{console.error(err); process.exit(1);});
