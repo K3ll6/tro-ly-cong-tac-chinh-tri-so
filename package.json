@@ -1,0 +1,17 @@
+{
+  "name": "tro-ly-cong-tac-chinh-tri-so",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Trợ lý Công tác Chính trị số - sản phẩm Sáng kiến số",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  }
+}

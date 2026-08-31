@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: tro-ly-cong-tac-chinh-tri-so
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: ctct-postgres
+          property: connectionString
+
+databases:
+  - name: ctct-postgres
+    databaseName: ctct
+    user: ctct_user
