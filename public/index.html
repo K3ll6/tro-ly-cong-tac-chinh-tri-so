@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trợ lý Công tác Chính trị số</title><link rel="stylesheet" href="/style.css"></head>
+<body><div class="shell">
+<header><div class="brand">TRỢ LÝ CÔNG TÁC CHÍNH TRỊ SỐ</div><div class="sub">SẢN PHẨM SÁNG KIẾN SỐ • Hỗ trợ quản lý, tuyên truyền và xử lý công việc thường xuyên</div></header>
+<nav>
+<button class="tab active" data-page="home">Tổng quan</button><button class="tab" data-page="reports">Báo cáo nhanh</button>
+<button class="tab" data-page="propaganda">Kho tuyên truyền</button><button class="tab" data-page="situations">Xử lý tình huống</button>
+</nav>
+<main>
+<section id="home" class="page active">
+<div class="hero"><div><span class="badge">HỆ THỐNG TRỰC TUYẾN</span><h1>Trợ lý Công tác Chính trị số</h1><p>Một giao diện đơn giản giúp số hóa một số thao tác thường xuyên của cán bộ chính trị.</p></div><button id="demo" class="primary">Chạy demo 60 giây</button></div>
+<div class="stats"><div class="stat"><b id="sReports">-</b><span>Báo cáo</span></div><div class="stat"><b id="sProp">-</b><span>Nội dung tuyên truyền</span></div><div class="stat"><b id="sSit">-</b><span>Tình huống</span></div><div class="stat"><b id="sStatus">...</b><span>Trạng thái server</span></div></div>
+<div id="demoResult" class="result hidden"></div>
+<div class="cards"><div class="card"><b>01 • Báo cáo nhanh</b><p>Tạo và lưu báo cáo trực tuyến.</p></div><div class="card"><b>02 • Kho tuyên truyền</b><p>Tra cứu nội dung theo chủ đề.</p></div><div class="card"><b>03 • Xử lý tình huống</b><p>Tham khảo quy trình 4 bước.</p></div></div>
+<div class="card"><h2>Giá trị thực tiễn</h2><div class="three"><div><b>Tiết kiệm thời gian</b><p>Chuẩn hóa mẫu và thao tác.</p></div><div><b>Dễ sử dụng</b><p>Chạy trên trình duyệt, không cần phần mềm riêng.</p></div><div><b>Có khả năng mở rộng</b><p>Có API và cơ sở dữ liệu PostgreSQL.</p></div></div></div>
+</section>
+<section id="reports" class="page"><div class="card"><h2>Báo cáo nhanh</h2><label>Đơn vị</label><input id="unit" placeholder="Ví dụ: Đại đội 1, Tiểu đoàn 3"><label>Nội dung</label><textarea id="content" placeholder="Nhập tình hình, kết quả..."></textarea><label>Kiến nghị / đề xuất</label><textarea id="proposal" placeholder="Nhập kiến nghị..."></textarea><button id="saveReport" class="primary">Lưu báo cáo</button><div id="reportMsg" class="result hidden"></div></div><div class="card"><h2>Báo cáo gần đây</h2><div id="reportList"></div></div></section>
+<section id="propaganda" class="page"><div class="card"><h2>Kho tuyên truyền</h2><input id="search" placeholder="Tìm: AI, an toàn thông tin, chuyển đổi số..."></div><div id="propList" class="list"></div></section>
+<section id="situations" class="page"><div class="card"><h2>Trợ lý xử lý tình huống</h2><select id="sitSelect"></select><button id="showSit" class="primary">Hiển thị hướng xử lý</button><div id="sitResult" class="result hidden"></div></div></section>
+</main><footer>Trợ lý Công tác Chính trị số • Phiên bản demo dự thi</footer></div><script src="/app.js"></script></body></html>
